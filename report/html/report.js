@@ -1,0 +1,59 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Free CRM login feature",
+  "description": "",
+  "id": "free-crm-login-feature",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Free login test Scenario",
+  "description": "",
+  "id": "free-crm-login-feature;free-login-test-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is on Login Page \"1234\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is Free CRM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user clicks on Login button",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1234",
+      "offset": 23
+    }
+  ],
+  "location": "LoginStepDefenition.login(String)"
+});
+formatter.result({
+  "duration": 21764809116,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefenition.title()"
+});
+formatter.result({
+  "duration": 1072031248,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d73.0.3683.86)\n  (Driver info: chromedriver\u003d71.0.3578.137 (86ee722808adfe9e3c92e6e8ea746ade08423c7e),platform\u003dWindows NT 10.0.14393 x86) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027ANTO\u0027, ip: \u0027192.168.43.99\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 71.0.3578.137 (86ee722808ad..., userDataDir: C:\\Users\\Antony\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55793}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 73.0.3683.86, webStorageEnabled: true}\nSession ID: 47f546d5d5f115743f05c23928521b2b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:277)\r\n\tat StepDefenitions.LoginStepDefenition.title(LoginStepDefenition.java:26)\r\n\tat ✽.When title of login page is Free CRM(Login.feature:6)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "LoginStepDefenition.click()"
+});
+formatter.result({
+  "status": "skipped"
+});
+});
